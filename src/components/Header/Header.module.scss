@@ -1,0 +1,20 @@
+@layer section {
+  .Header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background-color: var(--primary-dark-color);
+    padding-inline: 3em;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+}

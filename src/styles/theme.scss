@@ -1,0 +1,10 @@
+@use 'styles/fonts' as *;
+
+:root {
+  --primary-color: #d9cfc1;
+  --primary-light-color: #cfc3af;
+  --primary-dark-color: #696358;
+  --secondary-color: #212842;
+
+  --main-font-family: #{$main-font-family};
+}
