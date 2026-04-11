@@ -1,5 +1,18 @@
 @layer section {
   .ArtistSct {
     grid-column: 2;
+    display: grid;
+    justify-content: center;
+
+    .imgWrapper {
+      border: 1px solid var(--primary-dark-color);
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 1/1;
+      background-image: url('/src/assets/img/main-photo.JPG');
+      background-size: cover;
+      min-height: 280px;
+      max-height: 400px;
+    }
   }
 }

@@ -2,9 +2,12 @@
 
 :root {
   --primary-color: #d9cfc1;
-  --primary-light-color: #cfc3af;
+  --primary-light-color: #c7bba7;
   --primary-dark-color: #696358;
   --secondary-color: #212842;
 
   --main-font-family: #{$main-font-family};
+
+  --main-text-color: #202740;
+  --main-light-text-color: #5c658a;
 }

@@ -18,7 +18,8 @@
       "translation/*": ["./translation/*"],
       "types/*": ["./types/*"],
       "styles/*": ["./styles/*"],
-      "ui/*": ["./ui/*"]
+      "ui/*": ["./ui/*"],
+      "img/*": ["./assets/img/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

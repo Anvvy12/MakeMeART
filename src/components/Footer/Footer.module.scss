@@ -1,4 +1,7 @@
 @layer component {
   .Footer {
+    border-top: 1px solid var(--primary-light-color);
+    background-color: var(--primary-color);
+    height: 100px;
   }
 }
