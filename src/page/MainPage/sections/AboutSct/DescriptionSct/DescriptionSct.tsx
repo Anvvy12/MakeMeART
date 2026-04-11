@@ -14,7 +14,7 @@ export default function DescriptionSct() {
       </p>
       <div className={s.actions}>
         <Button>Works</Button>
-        <Button variant={'outline'}>About</Button>
+        <Button variant={'outline'}>About me</Button>
       </div>
     </section>
   );

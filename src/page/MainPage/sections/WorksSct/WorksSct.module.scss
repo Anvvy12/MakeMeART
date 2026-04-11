@@ -1,4 +1,16 @@
 @layer section {
   .WorksSct {
+    display: flex;
+    gap: 24px;
+    flex-flow: wrap;
+    justify-content: space-between;
+
+    .artContent {
+      padding: 20px;
+
+      .detailBtn {
+        width: 100%;
+      }
+    }
   }
 }

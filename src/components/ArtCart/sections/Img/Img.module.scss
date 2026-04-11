@@ -1,0 +1,9 @@
+@layer component {
+  .wrapper {
+    overflow: hidden;
+
+    img {
+      transition: all 0.2s;
+    }
+  }
+}

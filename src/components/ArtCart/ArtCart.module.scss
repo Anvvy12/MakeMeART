@@ -1,0 +1,17 @@
+@layer component {
+  .ArtCart {
+    max-width: 350px;
+    min-width: 250px;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--secondary-color);
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

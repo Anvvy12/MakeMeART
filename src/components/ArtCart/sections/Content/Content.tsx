@@ -2,8 +2,7 @@ import React from 'react';
 
 import cn from 'classnames';
 
-import s from './Footer.module.scss';
-import Logo from 'ui/Logo';
+import s from './Content.module.scss';
 
 interface TProps extends React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -13,10 +12,14 @@ interface TProps extends React.DetailedHTMLProps<
   children?: React.ReactNode;
 }
 
-export default function Footer({ className = '', ...props }: TProps) {
+export default function Content({
+  className = '',
+  children,
+  ...props
+}: TProps) {
   return (
-    <div className={cn(s.Footer, className)} {...props}>
-      <Logo />
+    <div className={cn(s.Content, className)} {...props}>
+      {children}
     </div>
   );
 }

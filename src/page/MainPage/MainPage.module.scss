@@ -1,7 +1,9 @@
 @layer section {
   .MainPage {
-    padding: 4em 0;
-    width: 80em;
+    padding: 4em 3em;
+    max-width: 80em;
     margin: 0 auto;
+    display: grid;
+    gap: 6em;
   }
 }

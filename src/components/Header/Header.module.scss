@@ -1,17 +1,22 @@
 @layer section {
   .Header {
-    width: 100%;
-    display: flex;
-    align-items: center;
+    background-color: var(--primary-dark-color);
     height: 64px;
     position: sticky;
     top: 0;
-    justify-content: space-between;
-    background-color: var(--primary-dark-color);
-    padding-inline: 10em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 3em;
+    color: var(--main-text-color);
 
-    .logo {
-      height: 64px;
+    .inner {
+      max-width: 80em;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .nav {
