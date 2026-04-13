@@ -2,15 +2,19 @@
   .WorksSct {
     display: flex;
     gap: 24px;
+    width: 100%;
     flex-flow: wrap;
     justify-content: space-between;
 
-    .artContent {
-      padding: 20px;
+    .detailBtn {
+      width: 100%;
+    }
+  }
 
-      .detailBtn {
-        width: 100%;
-      }
+  @media screen and (max-width: 992px) {
+    .WorksSct {
+      align-items: flex-start;
+      justify-content: center;
     }
   }
 }

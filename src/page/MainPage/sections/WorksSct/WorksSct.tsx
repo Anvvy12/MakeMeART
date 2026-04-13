@@ -20,7 +20,7 @@ export default function WorksSct() {
       {images.map((img, i) => (
         <ArtCart.Wrapper key={i} src={img.src} alt={img.name} title={img.name}>
           <ArtCart.Img src={img.src} alt={img.name} />
-          <ArtCart.Content className={s.artContent}>
+          <ArtCart.Content>
             <ArtCart.Description>
               <h4>{img.name}</h4>
               <p>

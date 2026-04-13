@@ -19,7 +19,8 @@
       "types/*": ["./types/*"],
       "styles/*": ["./styles/*"],
       "ui/*": ["./ui/*"],
-      "img/*": ["./assets/img/*"]
+      "img/*": ["./assets/img/*"],
+      "svg/*": ["./assets/svg/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
