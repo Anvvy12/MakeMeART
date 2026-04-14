@@ -1,3 +1,5 @@
+@use 'styles/variables' as *;
+
 @layer section {
   .Header {
     background-color: var(--primary-dark-color);
@@ -10,6 +12,7 @@
     justify-content: center;
     padding-inline: 3em;
     color: var(--main-text-color);
+    z-index: 1;
 
     .inner {
       max-width: 80em;
@@ -17,13 +20,20 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+      }
+
+      .burgerMenu {
+      }
     }
 
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
+    @media screen and (max-width: $sm) {
+      padding-inline: 0;
     }
   }
 }

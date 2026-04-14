@@ -1,20 +1,20 @@
+@use 'styles/variables' as *;
+
 @layer section {
   .WorksSct {
     display: flex;
     gap: 24px;
     width: 100%;
     flex-flow: wrap;
-    justify-content: space-between;
+    justify-content: center;
+
+    @media screen and (max-width: $sm) {
+      align-items: flex-start;
+      justify-content: center;
+    }
 
     .detailBtn {
       width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    .WorksSct {
-      align-items: flex-start;
-      justify-content: center;
     }
   }
 }

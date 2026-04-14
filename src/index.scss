@@ -1,5 +1,6 @@
 @use 'styles/theme';
 @use 'styles/fonts';
+@use 'styles/variables';
 //@import 'react-popper-tooltip/dist/styles.css';
 @import 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
 
@@ -20,7 +21,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color);
+    //background-color: var(--primary-color);
     color: var(--dark-color);
 
     font-family: var(--main-font-family);

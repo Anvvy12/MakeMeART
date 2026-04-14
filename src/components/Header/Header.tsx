@@ -13,10 +13,15 @@ export default function Header() {
           <Link to='/'>Main</Link>
           <Link to='/gallery'>Gallery</Link>
         </nav>
-        <BurgerMenu.Wrapper>
+        <BurgerMenu.Wrapper className={s.burgerMenu}>
           <BurgerMenu.MenuBtn />
           <BurgerMenu.Menu>
-            <BurgerMenu.MenuItem></BurgerMenu.MenuItem>
+            <BurgerMenu.MenuItem>
+              <Link to='/'>Main</Link>
+            </BurgerMenu.MenuItem>
+            <BurgerMenu.MenuItem>
+              <Link to='/gallery'>Gallery</Link>
+            </BurgerMenu.MenuItem>
           </BurgerMenu.Menu>
         </BurgerMenu.Wrapper>
       </div>

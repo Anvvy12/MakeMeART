@@ -1,4 +1,11 @@
 @layer component {
   .Menu {
+    display: none;
+    position: absolute;
+    bottom: 0;
+
+    &.open {
+      display: block;
+    }
   }
 }

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import cn from 'classnames';
-
+import { BurgerMenuCtx } from './BurgerMenuCtx';
 import s from './BurgerMenu.module.scss';
 
 interface TProps extends React.DetailedHTMLProps<
@@ -17,9 +17,12 @@ export default function BurgerMenu({
   children,
   ...props
 }: TProps) {
+  const [open, setOpen] = useState<boolean>(false);
   return (
-    <div className={cn(s.BurgerMenu, className)} {...props}>
-      {children}
-    </div>
+    <BurgerMenuCtx.Provider value={{ open, setOpen }}>
+      <div className={cn(s.BurgerMenu, className)} {...props}>
+        {children}
+      </div>
+    </BurgerMenuCtx.Provider>
   );
 }
