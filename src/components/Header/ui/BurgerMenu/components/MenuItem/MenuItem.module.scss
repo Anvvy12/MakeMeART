@@ -1,5 +1,7 @@
 @layer component {
   .MenuItem {
     position: relative;
+    text-align: end;
+    text-transform: uppercase;
   }
 }

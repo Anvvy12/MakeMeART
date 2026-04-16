@@ -1,6 +1,5 @@
 import React from 'react';
-import BurgerMenuIcon from 'svg/burger-menu-icon.svg?react';
-
+import Hamburger from 'hamburger-react';
 import cn from 'classnames';
 
 import s from './MenuBtn.module.scss';
@@ -24,7 +23,7 @@ export default function MenuBtn({ className = '', icon, ...props }: TProps) {
       className={cn(s.MenuBtn, className)}
       {...props}
     >
-      {icon ?? <BurgerMenuIcon />}
+      {icon ?? <Hamburger />}
     </button>
   );
 }

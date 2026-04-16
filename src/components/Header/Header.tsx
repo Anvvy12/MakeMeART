@@ -9,10 +9,6 @@ export default function Header() {
     <section className={cn(s.Header)}>
       <div className={s.inner}>
         <Logo />
-        <nav className={s.nav}>
-          <Link to='/'>Main</Link>
-          <Link to='/gallery'>Gallery</Link>
-        </nav>
         <BurgerMenu.Wrapper className={s.burgerMenu}>
           <BurgerMenu.MenuBtn />
           <BurgerMenu.Menu>
@@ -21,6 +17,9 @@ export default function Header() {
             </BurgerMenu.MenuItem>
             <BurgerMenu.MenuItem>
               <Link to='/gallery'>Gallery</Link>
+            </BurgerMenu.MenuItem>
+            <BurgerMenu.MenuItem>
+              <Link to='/about'>About</Link>
             </BurgerMenu.MenuItem>
           </BurgerMenu.Menu>
         </BurgerMenu.Wrapper>

@@ -1,4 +1,4 @@
 import { useContext } from 'react';
-import { BurgerMenuCtx } from './BurgerMenu';
+import { BurgerMenuCtx } from './BurgerMenuCtx';
 
 export const useBurgerMenuCtx = () => useContext(BurgerMenuCtx);

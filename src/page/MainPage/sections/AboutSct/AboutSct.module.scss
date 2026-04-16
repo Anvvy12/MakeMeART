@@ -1,8 +1,26 @@
 @layer section {
   .AboutSct {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    justify-content: space-between;
-    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .imgWrapper {
+      width: 100%;
+
+      .img {
+        width: 100%;
+      }
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 12px;
+
+      h3 {
+        font-size: 2.4rem;
+      }
+    }
   }
 }

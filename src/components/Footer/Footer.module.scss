@@ -1,7 +1,23 @@
 @layer component {
   .Footer {
-    border-top: 1px solid var(--primary-light-color);
-    background-color: var(--primary-color);
-    height: 100px;
+    background-color: var(--primary-dark-color);
+    min-height: 100px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    border-top: 1px solid var(--primary-dark-color);
+    padding: 20px 0 40px;
+
+    .navList {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
   }
 }

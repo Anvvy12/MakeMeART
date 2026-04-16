@@ -1,54 +1,17 @@
 @use 'styles/fonts' as *;
 
-//:root {
-//  --primary-color: #d9cfc1;
-//  --primary-light-color: #c7bba7;
-//  --primary-dark-color: #696358;
-//  --secondary-color: #212842;
-//  --secondary-light-color: #333e65;
-//
-//  --main-font-family: #{$main-font-family};
-//
-//  --main-text-color: #202740;
-//  --main-light-text-color: #5c658a;
-//}
-
-//maybe
-//:root {
-//  --primary-color: #dfe7dd;
-//  --primary-light-color: #edf3eb;
-//  --primary-dark-color: #7a8c76;
-//
-//  --secondary-color: #2f3e46;
-//  --secondary-light-color: #52796f;
-//
-//  --main-text-color: #1b2b2b;
-//  --main-light-text-color: #5f6f73;
-//}
-
-// maybe --primary-dark-color: #b08968;
-
-//:root {
-//  --primary-color: #dce5dc;
-//  --primary-light-color: #eef3ee;
-//  --primary-dark-color: #7a8f7a;
-//
-//  --secondary-color: #2f4f4f;
-//  --secondary-light-color: #4f6f6f;
-//
-//  --main-text-color: #1f2d2d;
-//  --main-light-text-color: #6b7d7d;
-//}
-
 :root {
-  --primary-color: #f7eaea;
-  --primary-light-color: #fdf5f5;
-  --primary-dark-color: #e5caca;
-  --main-font-family: #{$main-font-family};
+  --primary-color: #ffffff;
+  --primary-light-color: #f8fafc;
+  --primary-dark-color: #e2e8f0;
 
-  --secondary-color: #d8a7b1;
-  --secondary-light-color: #e7c1c9;
+  --secondary-color: #ffb3c1;
+  --secondary-light-color: #ffc2d1;
 
-  --main-text-color: #2a2a2a;
-  --main-light-text-color: #7a7a7a;
+  --accent-color: #ff4d6d;
+
+  --main-text-color: #0f172a;
+  --main-light-text-color: #64748b;
+
+  --border-color: #e2e8f0;
 }
