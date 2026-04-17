@@ -4,7 +4,7 @@ import s from './AboutSct.module.scss';
 
 export default function AboutSct() {
   return (
-    <section className={cn(s.AboutSct)}>
+    <section className={cn(s.AboutSct)} id='about-sct'>
       <div className={s.imgWrapper}>
         <img
           className={s.img}
@@ -14,7 +14,7 @@ export default function AboutSct() {
       </div>
       <div className={s.description}>
         <h3>Sophie Roman</h3>
-        <p>“Дайте мені тисячу років - і я розмалюю небо...”</p>
+        <p>Київська художниця. Сучасне та наївне мистецтво</p>
       </div>
     </section>
   );

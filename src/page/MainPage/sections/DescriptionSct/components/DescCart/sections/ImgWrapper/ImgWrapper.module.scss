@@ -1,0 +1,17 @@
+@layer component {
+  .ImgWrapper {
+    display: grid;
+    place-items: center;
+    gap: 8px;
+    color: var(--main-light-text-color);
+    grid-area: art;
+
+    .img {
+      max-height: 460px;
+    }
+
+    .desc {
+      font-size: var(--main-sm-font-size);
+    }
+  }
+}

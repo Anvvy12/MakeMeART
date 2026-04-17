@@ -1,0 +1,13 @@
+@use 'styles/variables' as *;
+@layer component {
+  .Title {
+    font-size: var(--main-lg-font-size);
+
+    text-wrap: wrap;
+    text-align: center;
+
+    @media screen and (min-width: $lg) {
+      text-align: start;
+    }
+  }
+}

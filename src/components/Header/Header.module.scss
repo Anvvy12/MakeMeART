@@ -20,11 +20,25 @@
     align-items: center;
     justify-content: space-between;
 
+    .link {
+      font-size: var(--main-sm-font-size);
+    }
+
     .nav {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 24px;
+
+      @media screen and (max-width: $lg) {
+        display: none;
+      }
+    }
+
+    .burgerMenu {
+      @media screen and (min-width: $lg) {
+        display: none;
+      }
     }
   }
 

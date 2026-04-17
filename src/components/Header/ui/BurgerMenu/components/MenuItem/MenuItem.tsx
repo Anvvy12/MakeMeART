@@ -3,10 +3,11 @@ import React from 'react';
 import cn from 'classnames';
 
 import s from './MenuItem.module.scss';
+import { useBurgerMenuCtx } from 'components/Header/ui/BurgerMenu/useBurgerMenuCtx';
 
 interface TProps extends React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
+  React.HTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
 > {
   className?: string;
   children?: React.ReactNode;
@@ -17,9 +18,15 @@ export default function MenuItem({
   children,
   ...props
 }: TProps) {
+  const { setOpen } = useBurgerMenuCtx();
+
   return (
-    <div className={cn(s.MenuItem, className)} {...props}>
+    <button
+      className={cn(s.MenuItem, className)}
+      onClick={() => setOpen(false)}
+      {...props}
+    >
       {children}
-    </div>
+    </button>
   );
 }

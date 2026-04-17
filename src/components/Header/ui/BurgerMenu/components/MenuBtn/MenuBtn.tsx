@@ -15,7 +15,7 @@ interface TProps extends React.DetailedHTMLProps<
 }
 
 export default function MenuBtn({ className = '', icon, ...props }: TProps) {
-  const { setOpen } = useBurgerMenuCtx();
+  const { setOpen, open } = useBurgerMenuCtx();
 
   return (
     <button
@@ -23,7 +23,7 @@ export default function MenuBtn({ className = '', icon, ...props }: TProps) {
       className={cn(s.MenuBtn, className)}
       {...props}
     >
-      {icon ?? <Hamburger />}
+      {icon ?? <Hamburger toggled={open} />}
     </button>
   );
 }

@@ -1,26 +1,28 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
-
   "compilerOptions": {
     "baseUrl": "src",
     "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["vite-plugin-svgr/client", "node"],
     "paths": {
+      "api/*": ["./api/*"],
       "assets/*": ["./assets/*"],
+      "main": ["./main"],
+      "ws": ["./ws"],
       "components/*": ["./components/*"],
+      "contexts/*": ["./contexts/*"],
+      "modal/*": ["./components/Modal/*"],
+      "hooks/*": ["./hooks/*"],
       "pages/*": ["./pages/*"],
+      "store/*": ["./store/*"],
+      "queries/*": ["./queries/*"],
+      "managers/*": ["./managers/*"],
       "layouts/*": ["./layouts/*"],
+      "services/*": ["./services/*"],
       "translation/*": ["./translation/*"],
-      "types/*": ["./types/*"],
-      "styles/*": ["./styles/*"],
-      "ui/*": ["./ui/*"],
-      "img/*": ["./assets/img/*"],
-      "svg/*": ["./assets/svg/*"]
+      "validation/*": ["./validation/*"],
+      "utils/*": ["./utils/*"],
+      "types/*": ["./types/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,

@@ -19,10 +19,17 @@ export default function Footer({ className = '', ...props }: TProps) {
     <div className={cn(s.Footer, className)} {...props}>
       <Logo />
       <nav className={s.navList}>
-        <Link to='/'>Main</Link>
-        <Link to='/gallery'>Gallery</Link>
-        <Link to='/about'>About</Link>
+        <Link className={s.link} to='/'>
+          Main
+        </Link>
+        <Link className={s.link} to='/gallery'>
+          Gallery
+        </Link>
+        <Link className={s.link} to='/about'>
+          About
+        </Link>
       </nav>
+      <a href={'mailTo:romanbs.wo@gmail.com'}>romanbs.wo@gmail.com</a>
     </div>
   );
 }
