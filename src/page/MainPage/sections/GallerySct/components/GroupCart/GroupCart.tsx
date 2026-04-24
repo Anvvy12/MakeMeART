@@ -24,12 +24,13 @@ export default function GroupCart({
 }: TProps) {
   return (
     <div className={cn(s.GroupCart, className)} {...props}>
-      <div>
-        <img src={src} alt={'Group Cart'} />
+      <div className={s.imgWrapper}>
+        <div className={s.img} style={{ backgroundImage: `url(${src})` }} />
+        <Button className={s.btn}>переглянути</Button>
       </div>
-      <h3>{title}</h3>
-      <p>{count} pictures</p>
-      <Button>View</Button>
+
+      <h3 className={s.title}>{title}</h3>
+      <p className={s.count}>{count} картин</p>
     </div>
   );
 }

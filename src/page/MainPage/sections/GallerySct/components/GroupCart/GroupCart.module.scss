@@ -1,4 +1,60 @@
 @layer component {
   .GroupCart {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    max-width: 380px;
+
+    .imgWrapper {
+      position: relative;
+
+      .img {
+        aspect-ratio: 1/1;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease-in-out;
+      }
+
+      .btn {
+        filter: blur(0) !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+      }
+
+      &:hover {
+        .img {
+          transition: all 0.4s ease-in-out;
+          filter: blur(8px);
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .btn {
+          transition: all 0.4s ease-in-out;
+          opacity: 1;
+        }
+      }
+    }
+
+    .title {
+      font-size: var(--main-lg-font-size);
+      color: var(--main-text-color);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 400;
+    }
+
+    .count {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--main-light-text-color);
+    }
   }
 }

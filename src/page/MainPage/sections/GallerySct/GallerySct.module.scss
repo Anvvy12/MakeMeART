@@ -1,4 +1,18 @@
 @layer section {
   .GallerySct {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .sectionTitle {
+      font-size: var(--main-xxl-font-size);
+    }
+
+    .galleryContent {
+      display: grid;
+      flex-wrap: wrap;
+      gap: 1.6em;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
   }
 }

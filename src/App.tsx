@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<PublicLayout />}>
           <Route index element={<MainPage />} />
-          <Route path={'gallery'} element={<GalleryPage />} />
+          <Route path={'/gallery'} element={<GalleryPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

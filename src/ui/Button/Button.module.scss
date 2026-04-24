@@ -1,7 +1,6 @@
 @layer component {
   .Button {
     font-family: var(--main-font-family), serif;
-    border-radius: 16px;
 
     cursor: pointer;
 
@@ -14,23 +13,37 @@
     //variants
 
     &.primary {
-      background-color: var(--secondary-color);
+      background-color: var(--dark-color);
       color: var(--primary-color);
+      transition:
+        background-color 0.4s ease-in-out,
+        color 0.4s ease-in-out;
 
       &:hover {
-        background-color: var(--secondary-light-color);
-        transition: all 0.2s ease-in-out;
+        background-color: inherit;
+        transition:
+          background-color 0.4s ease-in-out,
+          color 0.4s ease-in-out;
+        border: 1px solid var(--dark-color);
+        color: var(--dark-color);
       }
     }
 
     &.outline {
-      color: var(--secondary-color);
+      color: var(--dark-color);
       background-color: inherit;
       border: 1px solid var(--primary-light-color);
+      transition:
+        background-color 0.4s ease-in-out,
+        color 0.4s ease-in-out;
 
       &:hover {
-        border-color: var(--secondary-color);
-        transition: all 0.2s ease-in-out;
+        border-color: var(--dark-color);
+        transition:
+          background-color 0.4s ease-in-out,
+          color 0.4s ease-in-out;
+        background: var(--dark-color);
+        color: var(--primary-color);
       }
     }
   }
