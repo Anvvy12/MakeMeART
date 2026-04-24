@@ -1,1 +1,1 @@
-export { default } from './DescriptionSct';
+export { default } from './ArtSct';

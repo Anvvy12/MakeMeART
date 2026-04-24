@@ -4,6 +4,7 @@ import cn from 'classnames';
 
 import s from './GroupCart.module.scss';
 import Button from 'ui/Button';
+import { useTranslation } from 'react-i18next';
 
 interface TProps extends React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
@@ -22,15 +23,18 @@ export default function GroupCart({
   title,
   ...props
 }: TProps) {
+  const { t } = useTranslation(undefined, {
+    keyPrefix: 'page.main.gallery_sct.card',
+  });
+
   return (
     <div className={cn(s.GroupCart, className)} {...props}>
       <div className={s.imgWrapper}>
-        <div className={s.img} style={{ backgroundImage: `url(${src})` }} />
-        <Button className={s.btn}>переглянути</Button>
+        <img className={s.img} src={src} alt={t('img_alt')} />
+        <Button className={s.btn}>{t('view_btn')}</Button>
       </div>
-
       <h3 className={s.title}>{title}</h3>
-      <p className={s.count}>{count} картин</p>
+      <p className={s.count}>{t('paintings_count', { count })}</p>
     </div>
   );
 }

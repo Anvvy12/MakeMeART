@@ -1,20 +1,20 @@
 import cn from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 import s from './DescriptionSct.module.scss';
 import Button from '../../../../../ui/Button';
 
 export default function DescriptionSct() {
+  const { t } = useTranslation(undefined, { keyPrefix: 'page.main.hero_sct' });
+
   return (
     <section className={cn(s.DescriptionSct)}>
-      <p className={s.subTitle}>Современный художник</p>
-      <h1 className={s.title}>Мир глазами художника</h1>
-      <p className={s.description}>
-        Сюрреалистические работы, рождённые на стыке сна и реальности. Каждая
-        линия — это история, каждый штрих — эмоция, застывшая на бумаге.
-      </p>
+      <p className={s.subTitle}>{t('subtitle')}</p>
+      <h1 className={s.title}>{t('title')}</h1>
+      <p className={s.description}>{t('description')}</p>
       <div className={s.actions}>
-        <Button>Works</Button>
-        <Button variant={'outline'}>About me</Button>
+        <Button>{t('works_btn')}</Button>
+        <Button variant={'outline'}>{t('about_btn')}</Button>
       </div>
     </section>
   );

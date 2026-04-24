@@ -4,14 +4,17 @@
     gap: 12px;
     width: 100%;
     max-width: 380px;
+    break-inside: avoid;
+
+    align-content: start;
 
     .imgWrapper {
       position: relative;
 
       .img {
-        aspect-ratio: 1/1;
+        //aspect-ratio: 1/1;
         overflow: hidden;
-        background-position: center;
+        background-position: top;
         background-size: cover;
         display: flex;
         align-items: center;
