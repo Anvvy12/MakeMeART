@@ -1,3 +1,5 @@
+@use 'styles/variables' as *;
+
 @layer section {
   .MainPage {
     padding: 4em 3em;
@@ -6,5 +8,9 @@
     display: grid;
     gap: 6em;
     min-height: 100%;
+
+    @media screen and (max-width: $lg) {
+      padding: 3em 2em;
+    }
   }
 }

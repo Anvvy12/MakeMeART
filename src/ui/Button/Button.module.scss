@@ -7,14 +7,15 @@
     &.md {
       min-height: 50px;
       padding: 14px 32px;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: 500;
     }
 
     //variants
 
     &.primary {
-      background-color: var(--dark-color);
-      color: var(--primary-color);
+      background-color: var(--secondary-color);
+      color: var(--dark-color);
       transition:
         background-color 0.4s ease-in-out,
         color 0.4s ease-in-out;
@@ -24,26 +25,26 @@
         transition:
           background-color 0.4s ease-in-out,
           color 0.4s ease-in-out;
-        border: 1px solid var(--dark-color);
-        color: var(--dark-color);
+        border: 1px solid var(--secondary-color);
+        color: var(--secondary-color);
       }
     }
 
     &.outline {
-      color: var(--dark-color);
+      color: var(--secondary-color);
       background-color: inherit;
-      border: 1px solid var(--primary-light-color);
+      border: 1px solid var(--secondary-color);
       transition:
         background-color 0.4s ease-in-out,
         color 0.4s ease-in-out;
 
       &:hover {
-        border-color: var(--dark-color);
+        border-color: var(--secondary-color);
         transition:
           background-color 0.4s ease-in-out,
           color 0.4s ease-in-out;
-        background: var(--dark-color);
-        color: var(--primary-color);
+        background: var(--secondary-color);
+        color: var(--dark-color);
       }
     }
   }

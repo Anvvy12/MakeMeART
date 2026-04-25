@@ -31,7 +31,9 @@ export default function GroupCart({
     <div className={cn(s.GroupCart, className)} {...props}>
       <div className={s.imgWrapper}>
         <img className={s.img} src={src} alt={t('img_alt')} />
-        <Button className={s.btn}>{t('view_btn')}</Button>
+        <Button variant={'outline'} className={s.btn}>
+          {t('view_btn')}
+        </Button>
       </div>
       <h3 className={s.title}>{title}</h3>
       <p className={s.count}>{t('paintings_count', { count })}</p>
