@@ -1,0 +1,30 @@
+@use 'styles/variables' as *;
+@layer component {
+  .DescCart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title'
+      'art'
+      'desc';
+    gap: 1.1em;
+    column-gap: 5.4em;
+    max-width: 100%;
+    grid-template-rows: min-content 1fr;
+
+    @media screen and (min-width: $lg) {
+      &.art-left {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+          'art title'
+          'art desc';
+      }
+      &.art-right {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+          'title art'
+          'desc art';
+      }
+    }
+  }
+}
