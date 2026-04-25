@@ -9,7 +9,10 @@ export default function PublicLayout() {
   return (
     <section className={cn(s.PublicLayout)}>
       <Header />
-      <Outlet />
+      <main className={s.main}>
+        <Outlet />
+      </main>
+
       <Footer />
     </section>
   );

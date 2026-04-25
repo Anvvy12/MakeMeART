@@ -1,6 +1,18 @@
+@use 'styles/variables' as *;
+
 @layer section {
   .PublicLayout {
     width: 100%;
     position: relative;
+
+    .main {
+      max-width: 100%;
+      display: grid;
+      padding: 4em 3em;
+
+      @media screen and (max-width: $lg) {
+        padding: 3em 2em;
+      }
+    }
   }
 }
